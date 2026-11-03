@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>小三英文 · Lighthouse 5 溫習網</title>
-<meta name="description" content="小三上學期英文溫習網站：Lighthouse Book 5 五個單元的文法筆記、字詞表、閱讀理解與互動測驗。" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%BC%3C/text%3E%3C/svg%3E" />
+<title>小三英文 · 同 Beacon 一齊玩住溫</title>
+<meta name="description" content="小三上學期英文溫習網站：Lighthouse Book 5 五個單元的文法筆記、字詞卡、閱讀理解與互動測驗，有 XP、星星和貼紙。" />
+<meta name="theme-color" content="#FFFBF3" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23FFC53D'/%3E%3Cpath d='M50 16l18 20H32z' fill='%23FF7A6B'/%3E%3Crect x='36' y='36' width='28' height='14' rx='4' fill='%23fff'/%3E%3Cpath d='M34 52h32l-4 32H38z' fill='%23fff'/%3E%3Ccircle cx='44' cy='64' r='3' fill='%2326343B'/%3E%3Ccircle cx='56' cy='64' r='3' fill='%2326343B'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Noto+Sans+HK:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Noto+Sans+HK:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -19,33 +20,37 @@
     <a class="brand" href="#/">
       <span class="brand-mark" aria-hidden="true">
         <svg viewBox="0 0 48 48" width="30" height="30">
-          <path d="M20 44h8l-1.6-26h-4.8z" fill="#fff" opacity=".92"/>
-          <path d="M17 17h14l-1.2-5H18.2z" fill="#fff" opacity=".92"/>
-          <path d="M22 6h4l.7 5h-5.4z" fill="#fff" opacity=".92"/>
-          <path d="M9 11l6 3-6 3z" fill="#FFC563"/>
-          <path d="M39 11l-6 3 6 3z" fill="#FFC563"/>
+          <path d="M24 5l9 10H15z" fill="#FF7A6B" stroke="#26343B" stroke-width="2.2" stroke-linejoin="round"/>
+          <rect x="17" y="15" width="14" height="7" rx="2" fill="#fff" stroke="#26343B" stroke-width="2.2"/>
+          <path d="M16 22h16l-2 20H18z" fill="#fff" stroke="#26343B" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M17.4 28h13.2l-.6 5H18z" fill="#FF7A6B"/>
+          <circle cx="21" cy="26" r="1.5" fill="#26343B"/><circle cx="27" cy="26" r="1.5" fill="#26343B"/>
+          <path d="M9 18l6 3-6 3z" fill="#FFC53D"/><path d="M39 18l-6 3 6 3z" fill="#FFC53D"/>
         </svg>
       </span>
       <span class="brand-text">
         <strong>小三英文</strong>
-        <small>Lighthouse 5 · 上學期</small>
+        <small>Beacon · Book 5 上學期</small>
       </span>
     </a>
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" aria-label="主選單">
       <a href="#/" data-nav="home">總覽</a>
       <a href="#/notes/u1" data-nav="notes">筆記</a>
       <a href="#/quiz/u1" data-nav="quiz">測驗</a>
-      <a href="#/revision" data-nav="revision">總測驗</a>
+      <a href="#/quiz/revision" data-nav="revision">總測驗</a>
       <a href="#/progress" data-nav="progress">成績</a>
     </nav>
+    <button type="button" id="soundBtn" class="sound-btn" aria-pressed="true" aria-label="關閉音效" title="音效開關">
+      <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M4 9h4l5-4v14l-5-4H4z"/><path class="wv" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M16.4 8.4a5 5 0 010 7.2M19 5.8a8.6 8.6 0 010 12.4"/></svg>
+    </button>
   </div>
 </header>
 
-<main id="main" class="wrap"></main>
+<main id="main" class="wrap" tabindex="-1"></main>
 
 <footer class="footer">
   <p><strong>小三英文溫習網</strong> · 依據 Lighthouse for Hong Kong Book 5（Grammar 5 / Grammar Review 5 / Workbook）五個單元編寫</p>
-  <p class="muted">筆記與題目為教學用途重新編寫，並非課本原文。學習進度只儲存於此裝置的瀏覽器。</p>
+  <p class="muted">筆記與題目為教學用途重新編寫，並非課本原文。進度、XP 與貼紙只儲存在此裝置的瀏覽器。</p>
 </footer>
 
 <script src="assets/js/data/u1.js"></script>
